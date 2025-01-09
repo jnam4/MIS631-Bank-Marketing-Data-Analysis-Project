@@ -18,35 +18,30 @@ Achieving this requires identifying key factors influencing customer decisions a
 The goal is to develop a database system that supports predictive analytics, enabling banks to derive actionable insights for improved customer targeting. By analyzing data, the system aims to predict with greater accuracy whether a client is likely to subscribe to a term deposit through direct marketing campaigns.
 
 
-## Features
-- Relational database design and implementation.
-- Analysis of 40,000+ records to uncover patterns in customer behavior.
-- Key focus on call durations, contact methods, and financial attributes.
-
-## Project Highlights
-- Discovered the actionable insights for the business to perform and achieve higher targeting performance
-- Normalized and structured raw data for enhanced usability.
-- Visualized insights using Tableau and Excel.
-
-## Repository Structure
-- `data/`: Contains the original dataset.
-- `sql_scripts/`: SQL scripts for creating tables, inserting data, and running queries.
-- `analysis/`: Insights and visualizations derived from the analysis.
-- `docs/`: Final presentation and report documents.
-- 
+# Data
 ## Dataset
-- [Bank Marketing Dataset] (https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
-- Created by Paulo Cortez (Univ. Minho) and Sérgio Moro (ISCTE-IUL) @ 2012
-- bank-full.csv: all examples, ordered by date (from May 2008 to November 2010)
-- bank.csv: 10% of the examples (4521), randomly selected from bank-full.csv
-- **Rows**: Represent the total number of clients, 4521 
-- **Columns**: 17 attributes
-    Key Attributes
+- Source: [Bank Marketing Dataset] (https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+- Authors: Paulo Cortez (Univ. Minho) and Sérgio Moro (ISCTE-IUL), 2012
+- Size:
+    Rows: 4,521 clients
+    Columns: 17 attributes
+
+- Key Attributes
     - Demographics: age, job, marital status, education.
     - Financial Data: balance, housing loan, personal loan.
     - Campaign Details: contact type, day, month, duration, previous outcomes.
-    - Target Variable: y (indicates if the customer subscribed to a term deposit: yes/no).
-    
+    - Target Variable: y (indicates if the customer subscribed to a term deposit: yes/no).  
+
+
+## Data Cleaning Process
+To ensure the dataset is ready for analysis, the following cleaning steps were applied.
+1. Handling Missing and Unknown Values:
+Certain fields, such as job and education, contained missing or incomplete data labeled as “UNKNOWN.” These accounted for less than 3% of the dataset and were replaced with the most frequently occurring value (mode) for accuracy.
+
+2. Detecting and Managing Outliers:
+Outliers were detected in the "balance" attribute using the Interquartile Range (IQR) method.
+Extreme values waere either capped or removed to reduce their impact on the analysis
+
 
 ## Data Modeling
 ![alt text](image.png) ![alt text](image-1.png)
@@ -62,11 +57,36 @@ By looking at these entities, I was able to come up with some ideas to explore
 3. **Contact Duration**: How does the duration of contact during a campaign influence its success?
 
 
+## Data Observation
+![alt text](image-2.png)
+The analysis of the dataset reveals interesting patterns in customer profiles and their job distribution.
+**Educational Influence on Jobs**: As education levels rise, the proportion of individuals in high-skilled occupations, such as "Management," increases significantly. Conversely, roles that are labor-intensive, such as "Blue-collar" jobs, are predominantly associated with individuals who have only primary education. This trend reinforces traditional employment patterns where higher education levels align with greater career mobility and access to skilled job opportunities.
+
+**Educational Insights**: Lower education levels are generally linked to routine or manual labor roles. This observation underscores the importance of education in shaping job prospects and advancing career trajectories.
+
+
+## Features
+- Relational database design and implementation.
+- Analysis of 40,000+ records to uncover patterns in customer behavior.
+- Key focus on call durations, contact methods, and financial attributes.
+
+## Project Highlights
+- Discovered the actionable insights for the business to perform and achieve higher targeting performance
+- Normalized and structured raw data for enhanced usability.
+- Visualized insights using Tableau and Excel.
+
 ## Tools Used
 - PostgreSQL
 - Tableau
 - Python
 - Excel
+
+
+## Repository Structure
+- `data/`: Contains the original dataset.
+- `sql_scripts/`: SQL scripts for creating tables, inserting data, and running queries.
+- `analysis/`: Insights and visualizations derived from the analysis.
+- `docs/`: Final presentation and report documents.
 
 ## Contact
 If you have any questions, feel free to reach out:
