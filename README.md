@@ -17,7 +17,7 @@ Achieving this requires identifying key factors influencing customer decisions a
 ### Goal
 The goal is to develop a database system that supports predictive analytics, enabling banks to derive actionable insights for improved customer targeting. By analyzing data, the system aims to predict with greater accuracy whether a client is likely to subscribe to a term deposit through direct marketing campaigns.
 
-
+#
 # Data
 ## Dataset
 - Source: [Bank Marketing Dataset] (https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
@@ -59,6 +59,7 @@ By looking at these entities, I was able to come up with some ideas to explore
 
 ## Data Observation
 ![alt text](image-2.png)
+
 The analysis of the dataset reveals interesting patterns in customer profiles and their job distribution.
 **Educational Influence on Jobs**: As education levels rise, the proportion of individuals in high-skilled occupations, such as "Management," increases significantly. Conversely, roles that are labor-intensive, such as "Blue-collar" jobs, are predominantly associated with individuals who have only primary education. This trend reinforces traditional employment patterns where higher education levels align with greater career mobility and access to skilled job opportunities.
 
