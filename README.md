@@ -34,6 +34,42 @@ The goal is to develop a database system that supports predictive analytics, ena
 - `analysis/`: Insights and visualizations derived from the analysis.
 - `docs/`: Final presentation and report documents.
 - 
+## Dataset
+- [Bank Marketing Dataset] (https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
+- Created by Paulo Cortez (Univ. Minho) and Sérgio Moro (ISCTE-IUL) @ 2012
+- bank-full.csv: all examples, ordered by date (from May 2008 to November 2010)
+- bank.csv: 10% of the examples (4521), randomly selected from bank-full.csv
+- **Rows**: Represent the total number of clients, 4521 
+- **Columns**: 17 attributes
+    Key Attributes
+    - Demographics: age, job, marital status, education.
+    - Financial Data: balance, housing loan, personal loan.
+    - Campaign Details: contact type, day, month, duration, previous outcomes.
+    - Target Variable: y (indicates if the customer subscribed to a term deposit: yes/no).
+    
 
-## How to Use
-1. Clone the repository:
+## Data Modeling
+![alt text](image.png) ![alt text](image-1.png)
+This analysis distinguishes three key entities in the dataset: Customer, Campaign, and Customer_Campaign.
+
+- Customer: Represents individual clients. Each customer can participate in multiple campaigns, establishing a one-to-many relationship between customers and campaigns.
+- Campaign: Represents marketing efforts. Each campaign records one response per customer, forming a one-to-one relationship between campaigns and customer responses.
+- Customer_Campaign: Serves as a linking entity that connects customers to campaigns and tracks their interactions.
+
+By looking at these entities, I was able to come up with some ideas to explore
+1. **Customer Profiles** : What customer characteristics or profiles are more likely to result in a subscription to a term deposit?
+2. **Campaign Success**: Which campaigns demonstrate the highest success rates in achieving customer subscriptions?
+3. **Contact Duration**: How does the duration of contact during a campaign influence its success?
+
+
+## Tools Used
+- PostgreSQL
+- Tableau
+- Python
+- Excel
+
+## Contact
+If you have any questions, feel free to reach out:
+- Name: Jiyun Nam
+- Email: jnam4@stevens.edu
+- LinkedIn: linkedin.com/jiyunnam
