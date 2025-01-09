@@ -23,6 +23,8 @@ The goal is to derive actionable insights to optimize campaign strategies.
 - Excel
 
 
+
+# Problem statement
 ### Current Situation
 Banks rely heavily on marketing campaigns to promote their financial products. However, intense competition in the market, driven by factors such as fluctuating interest rates on mortgage and certificate of deposit (CD) products and the increasing reliance on digital platforms, has made it challenging for banks to attract customers. Additionally, many banks are no longer hiring traditional bankers due to emerging technological innovations that allow customers to independently compare financial products and apply for them online. Therefore, an effective marketing strategy has become crucial for banks to remain competitive in the market
 
@@ -41,7 +43,7 @@ The goal is to develop a database system that supports predictive analytics, ena
 
 
 
-# Data
+# Data Exploration
 ## Dataset
 - Source: [Bank Marketing Dataset] (https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
 - Authors: Paulo Cortez (Univ. Minho) and Sérgio Moro (ISCTE-IUL), 2012
@@ -91,11 +93,16 @@ The analysis of the dataset reveals interesting patterns in customer profiles an
 
 
 
+
+
 ## Repository Structure
 - `data/`: Contains the original dataset.
 - `sql_scripts/`: SQL scripts for creating tables, inserting data, and running queries.
 - `analysis/`: Insights and visualizations derived from the analysis.
 - `docs/`: Final presentation and report documents.
+
+
+
 
 ## Contact
 If you have any questions, feel free to reach out:
