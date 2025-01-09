@@ -68,7 +68,7 @@ Extreme values waere either capped or removed to reduce their impact on the anal
 
 
 ## Data Modeling
-![alt text](image.png) ![alt text](image-1.png)
+![alt text](image-1.png)![alt text](image-1.png)
 This analysis distinguishes three key entities in the dataset: Customer, Campaign, and Customer_Campaign.
 
 - Customer: Represents individual clients. Each customer can participate in multiple campaigns, establishing a one-to-many relationship between customers and campaigns.
