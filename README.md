@@ -1,4 +1,4 @@
-# MIS-Bank-Marketing-Data-Analysis-Project
+# MIS631-Bank-Marketing-Data-Analysis-Project
 This analysis explored the effectiveness of banking marketing campaigns using a relational database built with PostgreSQL. The insights below focus on customer behavior, campaign strategies, and key factors influencing success.
 
 ## Overview
