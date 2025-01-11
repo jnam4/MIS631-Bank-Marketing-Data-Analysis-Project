@@ -48,7 +48,7 @@ The goal is to develop a database system that supports predictive analytics, ena
 
 
 # Data Exploration
-## Dataset
+### Dataset
 - Source: [Bank Marketing Dataset] (https://archive.ics.uci.edu/ml/datasets/Bank+Marketing)
 - Authors: Paulo Cortez (Univ. Minho) and Sérgio Moro (ISCTE-IUL), 2012
 - Size:
@@ -63,7 +63,7 @@ The goal is to develop a database system that supports predictive analytics, ena
     - Target Variable: y (indicates if the customer subscribed to a term deposit: yes/no).  
 
 
-## Data Cleaning Process
+### Data Cleaning Process
 To ensure the dataset is ready for analysis, the following cleaning steps were applied.
 1. Handling Missing and Unknown Values:
 Certain fields, such as job and education, contained missing or incomplete data labeled as “UNKNOWN.” These accounted for less than 3% of the dataset and were replaced with the most frequently occurring value (mode) for accuracy.
@@ -73,7 +73,7 @@ Outliers were detected in the "balance" attribute using the Interquartile Range 
 Extreme values waere either capped or removed to reduce their impact on the analysis
 
 
-## Data Modeling
+### Data Modeling
 ![alt text](images/image-3.png)
 This analysis distinguishes three key entities in the dataset: Customer, Campaign, and Customer_Campaign.
 
@@ -87,7 +87,7 @@ By looking at these entities, I was able to come up with some ideas to explore
 3. **Contact Duration**: How does the duration of contact during a campaign influence its success?
 
 
-## Data Observation
+### Data Observation
 ![alt text](images/image.png)
 
 The analysis of the dataset reveals interesting patterns in customer profiles and their job distribution.
@@ -97,7 +97,7 @@ The analysis of the dataset reveals interesting patterns in customer profiles an
 **Educational Insights**: Lower education levels are generally linked to routine or manual labor roles. This observation underscores the importance of education in shaping job prospects and advancing career trajectories.
 
 # Key Finding and Analysis
-## Observation 1: Relationship Between Loan, Housing, Default, and Job
+### Observation 1: Relationship Between Loan, Housing, Default, and Job
 ![alt text](images/image-6.png)
 ![alt text](images/image-5.png)
 - Customers with no housing or personal loans and those not in default exhibited higher financial stability, leading to increased campaign success rates. Jobs such as management represent financially stable and high-value targets, making them ideal for premium banking services.
@@ -106,7 +106,7 @@ The analysis of the dataset reveals interesting patterns in customer profiles an
 - Insight: Focus on targeting financially stable customers while designing tailored support for those with lower financial stability to improve overall conversion rates.
 
 
-## Observation 2: Effectiveness of Contact Methods
+### Observation 2: Effectiveness of Contact Methods
 ![alt text](images/image-7.png)
 ![alt text](images/image-8.png)
 - Cellular contacts contributed the highest total volume of successful subscriptions despite a slightly lower success rate (14.36%) compared to telephone (14.62%). The unknown contact method underperformed with a 4.61% success rate.
@@ -114,7 +114,7 @@ The analysis of the dataset reveals interesting patterns in customer profiles an
 - Insight: While telephone campaigns are more efficient for smaller, focused groups, the large reach of cellular campaigns makes them the most impactful overall. A balanced strategy leveraging both methods is essential to maximize outreach and conversions.
 
 
-## Observation 3: Relationship Between Previous Campaign Outcomes and Success Rate
+### Observation 3: Relationship Between Previous Campaign Outcomes and Success Rate
 ![alt text](images/image-9.png)
 ![alt text](images/image-10.png)
 - Customers with a successful previous campaign outcome (poutcome = success) had a significantly high 64.34% success rate, demonstrating the importance of nurturing existing relationships.
@@ -123,7 +123,7 @@ The analysis of the dataset reveals interesting patterns in customer profiles an
 - Insight: Prioritize customers with previous successes and develop targeted engagement strategies for the unknown group to improve conversion rates. Minimize marketing efforts for customers with prior failures unless new insights suggest otherwise.
 
 
-## Observation 4: Relationship Between Call Duration and Success Rate
+### Observation 4: Relationship Between Call Duration and Success Rate
 ![alt text](images/image-11.png)
 ![alt text](images/image-12.png)
 - Long calls (>300 seconds) demonstrated the highest success rate (28.19%), indicating meaningful and productive customer interactions. Medium calls (100–300 seconds) had a significantly lower success rate (6.86%), suggesting room for improvement in engagement strategies during these calls. Short calls (<100 seconds) were largely ineffective, with only a 1.32% success rate, possibly reflecting rushed or unproductive interactions.
@@ -143,7 +143,7 @@ While cellular and telephone channels both play important roles, the focus shoul
 These recommendations directly address the business problem of improving customer acquisition in a competitive banking environment. By combining targeted strategies, meaningful engagement, and data-driven decision-making, banks can enhance their campaign effectiveness, reduce costs, and achieve sustainable growth.
 
 
-## Recommendation ideas
+### Recommendation ideas
 1. Focus resources on **longer call durations** and train staff to foster meaningful interactions.
 2. Develop personalized re-engagement strategies for customers with `unknown` or `failure` outcomes.
 3. Prioritize **telephone** and **cellular** channels while improving data quality for `unknown` contacts.
@@ -151,14 +151,14 @@ These recommendations directly address the business problem of improving custome
 
 
 
-## Repository Structure
+# Repository Structure
 - `data/`: Contains the original dataset.
 - `sql_scripts/`: SQL scripts for creating tables, inserting data, and running queries.
 - `analysis/`: Insights and visualizations derived from the analysis.
 - `docs/`: Final presentation and report documents.
 
 
-## Contact
+# Contact
 If you have any questions, feel free to reach out:
 - Name: Jiyun Nam
 - Email: jnam4@stevens.edu
