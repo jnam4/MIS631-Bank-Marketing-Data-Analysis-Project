@@ -1,5 +1,5 @@
 # MIS631-Bank-Marketing-Data-Analysis-Project
-# Why I chose this dataset
+## Why I chose this dataset
 I chose the Bank Marketing Data Analysis Project for my MIS631 course because it aligns closely with my academic background and professional aspirations. With an undergraduate degree in Finance, I have always been fascinated by the intersection of financial strategies and data-driven decision-making. This project allowed me to combine my foundational knowledge in finance with advanced skills in database management and analytics, which are critical in today’s data-centric business environment.
 
 My interest in cutomer service derives me to have curiosity in the deep understanding customer behavior and optimizing marketing strategies motivated me to explore this dataset. Through analyzing banking marketing campaigns dataset, it allow me to uncover actionable insights that directly impact business performance. Moreover, thoroughout this project, I was able to deepen my expertise in data modeling, SQL, and visualization tools like Tableau, while also gaining hands-on experience in leveraging data to solve real-world business problems.
