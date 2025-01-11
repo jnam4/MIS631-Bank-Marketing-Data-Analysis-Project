@@ -91,29 +91,39 @@ The analysis of the dataset reveals interesting patterns in customer profiles an
 
 **Educational Insights**: Lower education levels are generally linked to routine or manual labor roles. This observation underscores the importance of education in shaping job prospects and advancing career trajectories.
 
-# Key Findings
+# Key Finding and Analysis
+## Observation 1: Relationship Between Loan, Housing, Default, and Job
+![alt text](images/image-6.png)
+![alt text](images/image-5.png)
+- Customers with no housing or personal loans and those not in default exhibited higher financial stability, leading to increased campaign success rates. Jobs such as management represent financially stable and high-value targets, making them ideal for premium banking services.
+- Blue-collar and technician customers showed mixed financial stability, often with lower balances among those with loans or housing loans. In contrast, customers with extreme negative balances may require debt restructuring or personalized financial counseling.
 
-### 1. **Call Duration**
-- Customers engaged in **long calls (>300 seconds)** had a success rate of **28.19%**, significantly higher than medium (6.86%) or short calls (1.32%).
-- **Insight**: Longer calls are more effective in converting customers, suggesting the need for focused and meaningful conversations.
-
-
-### 2. **Previous Campaign Outcome (`poutcome`)**
-- Customers with a successful previous campaign had a **64.34% success rate**, while those with a `failure` had only **12.86%**.
-- Customers in the `unknown` category had a **9.10% success rate**, making them the largest but least effective group.
-- **Insight**: Previous campaign success is a strong predictor of future conversions, and `unknown` customers need targeted engagement strategies.
+- Insight: Focus on targeting financially stable customers while designing tailored support for those with lower financial stability to improve overall conversion rates.
 
 
-### 3. **Communication Method (`contact`)**
-- **Telephone** achieved the highest success rate of **14.62%**, followed by `cellular` at **14.36%**. The `unknown` channel underperformed with a **4.61% success rate**.
-- **Insight**: Prioritize `telephone` and `cellular` channels for higher engagement and better results.
+## Observation 2: Effectiveness of Contact Methods
+![alt text](images/image-7.png)
+![alt text](images/image-8.png)
+- Cellular contacts contributed the highest total volume of successful subscriptions despite a slightly lower success rate (14.36%) compared to telephone (14.62%). The unknown contact method underperformed with a 4.61% success rate.
+
+- Insight: While telephone campaigns are more efficient for smaller, focused groups, the large reach of cellular campaigns makes them the most impactful overall. A balanced strategy leveraging both methods is essential to maximize outreach and conversions.
 
 
-### 4. **Financial Stability**
-- Customers with **no housing loans** or **personal loans** exhibited higher success rates.
-- Those not in default had higher average balances, suggesting financial stability plays a critical role in campaign success.
-- **Insight**: Financially stable customers are more likely to convert and should be prioritized for targeted marketing.
+## Observation 3: Relationship Between Previous Campaign Outcomes and Success Rate
+![alt text](images/image-9.png)
+![alt text](images/image-10.png)
+- Customers with a successful previous campaign outcome (poutcome = success) had a significantly high 64.34% success rate, demonstrating the importance of nurturing existing relationships.
+- In contrast, those with a failure outcome had only a 12.86% success rate, while the unknown group—despite being the largest segment—achieved just 9.10% success.
 
+- Insight: Prioritize customers with previous successes and develop targeted engagement strategies for the unknown group to improve conversion rates. Minimize marketing efforts for customers with prior failures unless new insights suggest otherwise.
+
+
+## Observation 4: Relationship Between Call Duration and Success Rate
+![alt text](images/image-11.png)
+![alt text](images/image-12.png)
+- Long calls (>300 seconds) demonstrated the highest success rate (28.19%), indicating meaningful and productive customer interactions. Medium calls (100–300 seconds) had a significantly lower success rate (6.86%), suggesting room for improvement in engagement strategies during these calls. Short calls (<100 seconds) were largely ineffective, with only a 1.32% success rate, possibly reflecting rushed or unproductive interactions.
+
+- Insight: Focus marketing efforts on customers who show interest during initial interactions, prioritizing long, meaningful calls to maximize conversions. Enhance engagement tactics for medium-duration calls and avoid relying on short calls as they lack effectiveness.
 
 
 # Recommendations
