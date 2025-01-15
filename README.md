@@ -159,3 +159,6 @@ These recommendations directly address the business problem of improving custome
 
 
 # Contact
+- name: Jiyun Nam
+- email: jnam4@stevens.edu
+- linkedin: [Click Here](https://www.linkedin.com/in/jiyunnam/)
